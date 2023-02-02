@@ -11,10 +11,10 @@ public class Main {
 
 
         if(exp % 2 == 0) { // if even
-            // base^exp = raise(base, exp/2) * raise(base, exp/2)
+            //return raise(base, exp/2) * raise(base, exp/2)
         }
         else { // if odd
-            //  base ^ exp  = raise(base, exp/2) * raise(base, exp/2) * base
+            //  return raise(base, exp/2) * raise(base, exp/2) * base
         }
 
         // notice how above in the recursive steps, we are making progress towards a base case
@@ -48,13 +48,14 @@ public class Main {
 
 // After implementing the above two methods, you will want to examine just HOW much better the second implementation is than the first
 // add a Static class variable "public static countGbl = 0;"
-// and then in each of the raise methods, increment count
+// and then in each of the raise methods, increment the countGbl variable
 // each time you do a multiplacation operation in the recursive portion of the code.
 
 // Then you can write a main method/program that repeatedly sets countGbl to 0, then calculates raise(0.0, i) for i = 1, 2, 3, ...,100.
-// In each case, record the value of count, and plot these values against i. (Use excel if you like)
+// pretty much you are calling each raise method 100 times, and each time you are incrementing the exponent value
+// In each case, record the value of countGbl, and plot these values against i. (Use excel if you like)
 
-// so pretty much call the method with the fixed base number, and an exponent from 1 to 100, and on each call, record the value of the Count
+// so pretty much call the method with a fixed base number, and an exponent from 1 to 100, and on each call, record the value of the countGbl
 // static class variable, and then plot these values (in excel or whatever you want to use), and compare the differences between the two methods
 
 // Due one week after your first lab period.
