@@ -35,7 +35,7 @@ public class Main {
 
 
 
-        if (exp % 2 == 1) { // if odd multiply retval (raise(base, exp/2) * raise(base, exp/2)) by the base
+        if (exp % 2 != 0) { // if odd multiply retval (raise(base, exp/2) * raise(base, exp/2)) by the base
             retval *= base;
         }
 
